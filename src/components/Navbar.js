@@ -2,7 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 const Navbar = () => {
   return (
-    <div className=" text-gray-500 flex fixed top-0 left-0 right-0 justify-between bg-blue-200  ">
+    <div className="bg-transparent text-gray-500 flex fixed top-0 left-0 right-0 justify-between bg-blue-200  ">
       <img
         src="https://lh3.googleusercontent.com/gt9F2OBc-IXc2VywGSLUYjzQDvc7snS5mycu99Ixg_12RSEshA0sn5UPB5qtnCQW2gbeCaEw-CwsXcJ_qaYxSuPg7hMs1U_LE25cftK9"
         alt="loading"
