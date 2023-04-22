@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import Cards from "./Cards";
 import Data from "../utils/Data";
+import {Link} from "react-router-dom";
 
 const Body = () => {
   const [items, setItems] = useState(Data);
@@ -37,9 +38,13 @@ const Body = () => {
         </button>
       </div> </div>
 
-      <div className="m-3 p-2 grid grid-cols-3 justify-center">
+      <div className="m-3 p-2 grid grid-cols-3 justify-center ">
         {lists.map((items, index) => {
-          return <Cards key={index} {...items} />;
+          return (
+          index<4?(<Link to = "/cardinfo" ><Cards key={index} {...items} /></Link>):(<Cards key={index} {...items} />)
+          
+            )
+            // <Link to = "/cardinfo" ><Cards key={index} {...items} /></Link>
         })}
       </div>
     </div>
